@@ -20,6 +20,7 @@ services:
       - "5432:5432"
     environment:
       - POSTGRES_PASSWORD=changeme
+      - POSTGRES_USER=postgres
     volumes:
       - pg_data:/var/lib/postgresql/data
   redis:
